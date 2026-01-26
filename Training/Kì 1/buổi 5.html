@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Buổi 5</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Đăng kí thông tin</legend>
+        <!-- <legend>viết tiêu đề thay vì dùng h1 h2</legend> -->
+    <form action="" method="" target="">
+        <label for="name">Tên của bạn</label>
+        <br>
+        <input type="text">
+        <!-- <input type="text(nhập văn bản chữ hoặc số tất cả các kí hiệu)" type="number(chỉ nhập số)" name="name" id="name" placeholder="Tên của bạn" size="30"> -->
+        <br>
+        <label>Số điện thoại</label>
+        <br>
+        <input type="number">
+        <br>
+        <label>Mật khẩu của bạn</label>
+        <br>
+        <input type="password" required>
+        <!-- required để bắt buộc phải điền, là 1 thuộc tính trong thẻ input -->
+        <br>
+        <label>Email của bạn</label><br>
+        <input type="email"><br>
+        <label>Ngày tháng năm sinh</label>
+        <br>
+        <input type="date"><br>
+        <label>Màu yêu thích của bạn</label><br>
+        <input type="color"><br>
+        <label for="gender">Giới tính của bạn</label><br>
+        <label><input type="radio" name="gender" id=""/>Nữ</label>
+        <label><input type="radio" name="gender" id=""/>Nam</label>
+        <label><input type="radio" name="gender" id=""/>Khác</label><br>
+        <label for="fav">Sở thích của bạn</label><br>
+        <label><input type="checkbox" name="fav" id=""/>Cầu lông</label>
+        <label><input type="checkbox" name="fav" id=""/>Bóng rổ</label>
+        <label><input type="checkbox" name="fav" id=""/>Bóng bàn</label>
+        <!-- phải để name giống nhau mới cho phép chọn 1 trong 3 nếu name khác nhau có thể chọn nhiều đáp án -->
+      <br>
+      <label for="dc">Tỉnh/ Thành phố</label><br>
+      <select>
+        <option value="1">Vĩnh Phúc</option>
+        <option value="2" selected>Thanh Hoá</option>
+        <option value="2">Nam Định</option>
+        <!-- selected là để hiện giá trị đó ở đầu tiên, muốn cả 3 đều hiện thì <select size="3"> -->
+        </select>
+        <label for="bt">Giới thiệu bản thân</label>
+        <textarea row="3" cols="3"></textarea><br>
+        <!-- để viết 1 đoạn văn bản 3 dòng, 3 cột( có thể chỉnh sửa trực tiếp trên form) -->
+       <button type="reset">Làm lại</button><br>
+       <!-- reset kh lấy lại được nữa, gửi vẫn trở về đc trang cũ -->
+        <button type="submit">Gửi</button><br>
+    </form>
+    </fieldset>
+</body>
+</html>
